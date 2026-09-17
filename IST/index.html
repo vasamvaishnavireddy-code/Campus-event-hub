@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Campus Event Hub | MRECW
+    </title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="index.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="#home"
+           class="college-logo">
+
+            <img src="LOGO.jpg"
+                 alt="Malla Reddy Engineering College for Women Logo">
+
+            <div class="college-name">
+
+                <strong>
+                    MALLA REDDY ENGINEERING
+                </strong>
+
+                <strong>
+                    COLLEGE FOR WOMEN
+                </strong>
+
+                <span>
+                    Campus Event Hub
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="#home"
+               class="active">
+                Home
+            </a>
+
+            <a href="#events">
+                Events
+            </a>
+
+            <a href="#register">
+                Register
+            </a>
+
+            <a href="#my-registrations">
+                My Registrations
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero"
+         id="home">
+
+    <div class="container hero-content">
+
+
+        <div class="hero-text">
+
+            <span class="badge">
+                ✨ MRECW CAMPUS EVENT HUB
+            </span>
+
+
+            <h1>
+
+                All College Events.
+                <span>One Page.</span>
+                Zero Confusion.
+
+            </h1>
+
+
+            <p>
+
+                Discover technical, cultural, innovation,
+                creative and sports events happening across
+                Malla Reddy Engineering College for Women.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#events"
+                   class="btn primary-btn">
+
+                    Explore Events →
+
+                </a>
+
+
+                <a href="#register"
+                   class="btn secondary-btn">
+
+                    Register Now
+
+                </a>
+
+            </div>
+
+
+            <div class="countdown-box">
+
+                <span>
+                    ⏳ NEXT EVENT STARTS IN
+                </span>
+
+                <div id="countdown">
+                    Loading...
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="floating-card card-one">
+
+                <span>💻</span>
+
+                <div>
+
+                    <strong>
+                        Hackathon
+                    </strong>
+
+                    <small>
+                        Innovation Hall
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="main-hero-icon">
+                📅
+            </div>
+
+
+            <div class="floating-card card-two">
+
+                <span>🎤</span>
+
+                <div>
+
+                    <strong>
+                        Cultural Fest
+                    </strong>
+
+                    <small>
+                        College Auditorium
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EVENTS
+===================================================== -->
+
+<section class="events-section"
+         id="events">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                WHAT'S HAPPENING
+            </span>
+
+            <h2>
+                Upcoming <span>Events</span>
+            </h2>
+
+            <p>
+                Search, filter and discover all
+                upcoming college events.
+            </p>
+
+        </div>
+
+
+
+        <!-- SEARCH AND FILTER -->
+
+        <div class="event-controls">
+
+
+            <div class="search-box">
+
+                <span>
+                    🔍
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search event name..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <select id="departmentFilter">
+
+                <option value="all">
+                    All Departments
+                </option>
+
+                <option value="CSE">
+                    CSE
+                </option>
+
+                <option value="AIML">
+                    AIML
+                </option>
+
+                <option value="ECE">
+                    ECE
+                </option>
+
+                <option value="EEE">
+                    EEE
+                </option>
+
+                <option value="IT">
+                    IT
+                </option>
+
+                <option value="Cultural Club">
+                    Cultural Club
+                </option>
+
+                <option value="Sports Club">
+                    Sports Club
+                </option>
+
+                <option value="Entrepreneurship Cell">
+                    Entrepreneurship Cell
+                </option>
+
+            </select>
+
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Innovation">
+                    Innovation
+                </option>
+
+                <option value="Creative">
+                    Creative
+                </option>
+
+                <option value="Cultural">
+                    Cultural
+                </option>
+
+                <option value="Business">
+                    Business
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+            </select>
+
+
+            <select id="sortEvents">
+
+                <option value="default">
+                    Sort Events
+                </option>
+
+                <option value="nearest">
+                    Nearest Date
+                </option>
+
+                <option value="latest">
+                    Latest Date
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="event-summary">
+
+            <span id="eventCount">
+                0 events found
+            </span>
+
+        </div>
+
+
+        <!-- EVENTS GENERATED BY JAVASCRIPT -->
+
+        <div class="events-grid"
+             id="eventsGrid">
+        </div>
+
+
+        <div class="no-events"
+             id="noEvents">
+
+            <div>
+                🔍
+            </div>
+
+            <h3>
+                No Events Found
+            </h3>
+
+            <p>
+                Try another event name or filter.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     REGISTRATION
+===================================================== -->
+
+<section class="register-section"
+         id="register">
+
+    <div class="container register-wrapper">
+
+
+        <div class="register-info">
+
+            <span class="section-label">
+                JOIN THE EXPERIENCE
+            </span>
+
+            <h2>
+                Register for an <span>Event</span>
+            </h2>
+
+            <p>
+                Enter your details and select an event
+                to complete your registration.
+            </p>
+
+
+            <div class="register-features">
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p>
+                        Simple registration process
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p>
+                        All events in one place
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p>
+                        Event coordinator details
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p>
+                        WhatsApp and Excel access
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <div class="form-card">
+
+            <form id="registrationForm"
+                  novalidate>
+
+
+                <div id="formMessage"
+                     class="form-message">
+                </div>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name">
+
+                        <small
+                            class="error"
+                            id="nameError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="roll">
+                            Roll Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="roll"
+                            placeholder="Enter roll number">
+
+                        <small
+                            class="error"
+                            id="rollError">
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <select id="department">
+
+                            <option value="">
+                                Select Department
+                            </option>
+
+                            <option value="CSE">
+                                CSE
+                            </option>
+
+                            <option value="AIML">
+                                AIML
+                            </option>
+
+                            <option value="ECE">
+                                ECE
+                            </option>
+
+                            <option value="EEE">
+                                EEE
+                            </option>
+
+                            <option value="IT">
+                                IT
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="error"
+                            id="departmentError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="year">
+                            Year
+                        </label>
+
+                        <select id="year">
+
+                            <option value="">
+                                Select Year
+                            </option>
+
+                            <option value="1st Year">
+                                1st Year
+                            </option>
+
+                            <option value="2nd Year">
+                                2nd Year
+                            </option>
+
+                            <option value="3rd Year">
+                                3rd Year
+                            </option>
+
+                            <option value="4th Year">
+                                4th Year
+                            </option>
+
+                        </select>
+
+                        <small
+                            class="error"
+                            id="yearError">
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="student@example.com">
+
+                        <small
+                            class="error"
+                            id="emailError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="10 digit phone number"
+                            maxlength="10">
+
+                        <small
+                            class="error"
+                            id="phoneError">
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="event">
+                        Select Event
+                    </label>
+
+                    <select id="event">
+
+                        <option value="">
+                            Choose an event
+                        </option>
+
+                    </select>
+
+                    <small
+                        class="error"
+                        id="eventError">
+                    </small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    Complete Registration →
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MY REGISTRATIONS
+===================================================== -->
+
+<section class="my-registrations"
+         id="my-registrations">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                YOUR EVENT ACTIVITY
+            </span>
+
+            <h2>
+                My <span>Registrations</span>
+            </h2>
+
+            <p>
+                Track your registered events,
+                coordinators and participation.
+            </p>
+
+        </div>
+
+
+        <div class="registration-stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎟️
+                </div>
+
+                <div>
+
+                    <h3 id="participatedCount">
+                        0
+                    </h3>
+
+                    <p>
+                        Events Participated
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🏆
+                </div>
+
+                <div>
+
+                    <h3 id="conductedCount">
+                        6
+                    </h3>
+
+                    <p>
+                        Events Conducted
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+
+                    <h3 id="registrationCount">
+                        
+                    </h3>
+
+                    <p>
+                        Total Registrations
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="registration-cards"
+            id="registrationList">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EVENT MODAL
+===================================================== -->
+
+<div class="modal"
+     id="eventModal"
+     aria-hidden="true">
+
+    <div class="modal-content">
+
+
+        <button
+            type="button"
+            class="close-modal"
+            id="closeModal">
+
+            ×
+
+        </button>
+
+
+        <div
+            class="modal-icon"
+            id="modalIcon">
+
+            💻
+
+        </div>
+
+
+        <span
+            class="registration-category"
+            id="modalCategory">
+
+            TECHNICAL
+
+        </span>
+
+
+        <h2 id="modalTitle">
+            Event Name
+        </h2>
+
+
+        <p id="modalDescription">
+            Event description
+        </p>
+
+
+        <div class="modal-details">
+
+            <p>
+                📅 <strong>Date:</strong>
+                <span id="modalDate"></span>
+            </p>
+
+            <p>
+                ⏰ <strong>Time:</strong>
+                <span id="modalTime"></span>
+            </p>
+
+            <p>
+                📍 <strong>Venue:</strong>
+                <span id="modalVenue"></span>
+            </p>
+
+            <p>
+                🏫 <strong>Department:</strong>
+                <span id="modalDepartment"></span>
+            </p>
+
+            <p>
+                👤 <strong>Coordinator:</strong>
+                <span id="modalCoordinator"></span>
+            </p>
+
+        </div>
+
+
+        <a href="#register"
+           class="modal-register">
+
+            Register for this Event →
+
+        </a>
+
+    </div>
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer"
+        id="contact">
+
+    <div class="container footer-content">
+
+
+        <div class="footer-brand">
+
+            <div class="college-name footer-college">
+
+                <strong>
+                    MALLA REDDY ENGINEERING
+                </strong>
+
+                <strong>
+                    COLLEGE FOR WOMEN
+                </strong>
+
+                <span>
+                    Campus Event Hub
+                </span>
+
+            </div>
+
+            <p>
+                Connecting students with every
+                opportunity happening on campus.
+            </p>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <p>
+                📍 Malla Reddy Engineering
+                College for Women, Hyderabad
+            </p>
+
+            <p>
+                📧 mrecwcampuseventhub@gmail.com
+            </p>
+
+            <p>
+                📞 +91 6305059248
+            </p>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/mrecwautonomous/">
+                    Instagram
+                </a>
+
+                <a href="https://www.linkedin.com/company/mrecwautonomous">
+                    LinkedIn
+                </a>
+
+                <a href="https://www.facebook.com/mrecwautonomous">
+                    Facebook
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            © 2026 Campus Event Hub |
+            Malla Reddy Engineering College for Women
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
